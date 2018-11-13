@@ -1,0 +1,125 @@
+.cargo_detail{
+    position: relative;
+    padding-top:12vh;
+    width:80vw;
+    margin:auto;
+    height: 100vh;
+    background:#f0f2f5;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.cargo_detail .detail_head{
+    height: 100px;
+    line-height:100px;
+    font-size:30px;
+    font-family:'楷体';
+    padding-left:20px;
+}
+.ant-carousel .slick-slide {
+    height: 350px;
+    overflow: hidden;
+}
+.cargo_detail .detail_left{
+    position: relative;
+    width:600px;
+    height:600px;
+    overflow: hidden;
+    background: #ffffff;
+}
+/*侧边栏*/
+.cargo_detail .detail_left .cargo_side{
+    position: absolute;
+    width:50px;
+    height:150px;
+    background:rgba(0,0,0,0.5);
+    bottom:250px;
+    right:-50px;
+    transition: 1s;
+}
+.cargo_detail .detail_left .cargo_side span{
+    font-size:30px;
+    width:50px;
+    height: 50px;
+    display: block;
+    padding: 0;
+    color:#ffffff;
+    cursor: pointer;
+    line-height:50px;
+}
+.detail_left:hover .cargo_side{
+    right:0;
+}
+.detail_left_footer{
+    padding-left:20px;
+    width: 100%;
+    height:200px;
+}
+.detail_left_footer span{
+    display: inline-block;
+    color:#000000;
+}
+.detail_left_footer .line1,.detail_left_footer .line2{
+    width:70%;
+    font-size:16px;
+    text-align: left;
+}
+.detail_left_footer .line1 span{
+    display: inline-block;
+    height:50px;
+}
+.detail_left_footer .line1 span strong{
+    font-size:40px;
+}
+.detail_left_footer .line1 span:nth-of-type(1){
+    font-size:20px;
+    color:red;
+    margin-right:20px;
+}
+.detail_left_footer .line1 span:nth-of-type(2){
+    text-decoration:line-through;
+    font-size:30px;
+    color:#8a8a8a;
+}
+.detail_left_footer .line3{
+    font-size:16px;
+    text-align: left;
+    height:50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.detail_left_footer .line4{
+    position: absolute;
+    display: inline-block;
+    width:20%;
+    height: 100px;
+    bottom:130px;
+    right:0;
+    text-align: left;
+    padding-top:20px;
+}
+.detail_left_footer .line4 span{
+    display: block;
+ }
+.detail_left_footer .line5 {
+    text-align: left;
+    color:#8a8a8a;
+}
+.cargo_detail .detail_right {
+    position:absolute;
+    top:200px;
+    width: 700px;
+    left:700px;
+}
+.detail_right_comment{
+    position:absolute;
+    top:360px;
+    width: 700px;
+    left:700px;
+    /*border:solid 1px red;*/
+    height:300px;
+}
+
+
+
+
+

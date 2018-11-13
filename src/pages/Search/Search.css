@@ -1,0 +1,40 @@
+.search{
+    margin-top:30px;
+    position: absolute;
+    width:500px;
+    height: 400px;
+    background: rgba(221, 223,230,0.3);
+    border:solid 1px #ffffff;
+    border-radius:5px;
+    padding:60px 20px 20px 20px;
+    top:100px;
+    right:100px;
+    z-index:999;
+
+}
+.ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-title {
+    color: #ffffff !important;
+}
+.hidden{
+    display: none !important;
+}
+.show{
+    display:block !important;
+}
+ section h1{
+    color: #8a8a8a;
+    font-size:40px;
+}
+section .imag{
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background-image:url("../../images/笑脸2.png");
+    cursor:pointer;
+    margin-left:50px;
+}
+section .imag:hover{
+    background-position:0 150px;
+    transform: scale(1.2);
+}
+

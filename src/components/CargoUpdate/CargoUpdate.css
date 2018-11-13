@@ -1,0 +1,6 @@
+.cargo_update{
+    padding-top: 100px;
+    height: 1000px;
+    overflow: hidden;
+    overflow-y:scroll;
+}

@@ -1,0 +1,13 @@
+.footer_content .images{
+    margin-top:10px;
+}
+.footer_content .images img{
+    border:solid 1px #cccccc;
+    margin-right:10px;
+}
+.footer_content .text p{
+    margin:0;
+}
+.footer_content .text p span{
+    padding:0 5px;
+}

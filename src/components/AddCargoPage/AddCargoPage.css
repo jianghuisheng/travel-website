@@ -1,0 +1,8 @@
+.add_cargo{
+    position:relative;
+    width: 92vw;
+    height: 100vh;
+    margin:0 auto;
+    z-index:999;
+    overflow-y: scroll;
+}

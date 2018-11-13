@@ -1,0 +1,77 @@
+
+.banner{
+    position: relative;
+    padding-top:100px;
+    overflow: hidden;
+}
+.banner .text{
+    position:absolute;
+    z-index: 998;
+    width: 100vw;
+    font-size: 3rem;
+    margin-top: 20vh;
+}
+.banner .text h1{
+    color:#ffffff;
+    font-weight:bold;
+    margin-bottom: 0;
+    font-family:'楷体';
+}
+.banner .text .left,.banner .text .right{
+    display: inline-block;
+}
+.banner .text .small{
+    animation: move 1s 1 linear forwards;
+}
+@keyframes move {
+    0%{
+        transform: rotate(-40deg);
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+}
+.banner .text .left{
+    animation: left 1s 1 linear forwards;
+}
+@keyframes left {
+    0%{
+        transform:translateX(-1500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.banner .text .right{
+    animation: right 1s 1 linear forwards;
+}
+@keyframes right {
+    0%{
+        transform:translateX(1050px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.banner .text .bottom{
+    animation: bottom 1s 1 linear forwards;
+}
+@keyframes bottom{
+    0%{
+        transform:translateY(1000px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*bnner图的样式*/
+.swiper-container{
+    width:100vw;
+    height:80vh;
+    overflow: hidden;
+}
+.swiper-slide img{
+    width:100vw;
+    height:80vh;
+}
+

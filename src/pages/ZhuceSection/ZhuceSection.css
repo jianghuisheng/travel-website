@@ -1,0 +1,19 @@
+
+.zhuce{
+    margin-top:30px;
+    position: absolute;
+    width:500px;
+    height: 500px;
+    background: rgba(221, 223,230,0.3);
+    border:solid 1px #ffffff;
+    top:100px;
+    right:100px;
+    border-radius:5px;
+    padding:50px 20px 20px 20px;
+    z-index:999;
+}
+.login-form-forgot {
+    float: right;
+    display: inline-block;
+    width:200px;
+}

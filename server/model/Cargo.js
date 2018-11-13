@@ -1,0 +1,88 @@
+const mongoose = require('mongoose');
+const CargoSchema = new mongoose.Schema({
+    cargo_name:String,
+    cargo_image:String,
+    cargo_photos:Array,
+    //商品已售多少件
+    cargo_sales:{
+        type:Number,
+        default:0
+    },
+    //商品总数
+    cargoAllNum:{
+        type:Number,
+        default:0
+    },
+    //商品剩余数量
+    cargo_remain:{
+        type:Number,
+        default:0
+    },
+    cargo_actives:Array,
+    type:String,
+    tags:Array,
+    //管理员的id
+    addUser:{
+        type:mongoose.Schema.ObjectId,
+        ref:'User'
+    },
+    cargo_collected:{
+        type:Number,
+        default:0
+    },
+    cargo_price:Number,
+    before_price:Number,
+    description:String,
+    create_time:String,
+    update_time:String,
+    //是否支持到付
+    success_fee:Boolean,
+    delivery_fee:{
+        type:Number,
+        default:0
+    },
+    delivery:Array,
+    start_city:String,
+    start_time:String
+});
+CargoSchema.statics={
+    //通过商品名称查找商品
+    getCargoByCargoName:(cargo_name,callback)=>{
+        CargoModel.findOne({cargo_name}).then((cargo)=>{
+            callback(null,cargo)
+        }).catch((err)=>{
+            console.log(err);
+            callback(err);
+        })
+    },
+    //通过商品id查找商品
+    getCargoByCargoId:(_id,callback)=>{
+        CargoModel.findOne({_id}).then((cargo)=>{
+            callback(null,cargo)
+        }).catch((err)=>{
+            console.log(err);
+            callback(err);
+        })
+    },
+//    通过商品的标签查找商品
+    getCargoByCargoTag:(tag,callback)=>{
+        CargoModel.findOne({tag}).then((cargo)=>{
+            callback(null,cargo)
+        }).catch((err)=>{
+            console.log(err);
+            callback(err);
+        })
+    },
+    //查找到所有商品
+    getAllCargo:(callback)=>{
+        CargoModel.find().then((cargos)=>{
+            callback(null,cargos)
+        }).catch((err)=>{
+            console.log(err);
+            callback(err);
+        })
+    },
+};
+
+const CargoModel = mongoose.model('Cargo',CargoSchema);
+module.exports = CargoModel;

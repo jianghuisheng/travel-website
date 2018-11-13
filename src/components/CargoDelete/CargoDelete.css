@@ -1,0 +1,26 @@
+
+.delete_section{
+    position:relative;
+    height:150px;
+    width:90vw;
+}
+.delete_section .kucun, .delete_section .shangjia,.sales{
+    text-align: left;
+    display: block;
+}
+.delete_title{
+    text-align: left;
+    font-size:30px;
+    line-height:30px;
+}
+.delete_section .kucun, .delete_section .shangjia ,.sales{
+    font-size: 20px;
+}
+strong{
+    color:orange
+}
+.delete_section .xiugai{
+    position: absolute;
+    bottom:10px;
+    left:300px;
+}

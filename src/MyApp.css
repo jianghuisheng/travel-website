@@ -1,0 +1,112 @@
+
+ul li{
+    list-style-type: none;
+}
+.my-app{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(white,skyblue);
+}
+.my-app .bg_footer{
+    position: absolute;
+    width:100vw;
+    height:10vh;
+    top:90vh;
+    background:url("./images/波浪.png") no-repeat;
+    background-size:100% 100%;
+}
+.chat{
+    position: fixed;
+    top:40vh;
+    z-index:1000;
+    width: 55px;
+    height: 100px;
+    font-family:'楷体';
+}
+.chat .sider-top{
+    position:relative;
+    left:-1px;
+    top:0;
+    cursor: pointer;
+    transition:1s;
+}
+.chat .sider-top::before{
+    content:'客服';
+    position:absolute;
+    z-index:1001;
+    color: #ffffff;
+    top:50px;
+    left:10px;
+}
+.chat .sider-bottom{
+    position: relative;
+    left:-300px;
+    transition: 1s;
+}
+.chat:hover .sider-bottom{
+    left:0 !important;
+}
+.chat:hover .sider-top{
+    left:-150px;
+}
+.chat .sider-bottom::before{
+    content:'在线客服';
+    position:absolute;
+    z-index:1001;
+    color: #ffffff;
+    width:40px;
+    text-indent:0.5em;
+    white-space:pre-wrap;
+    left:130px;
+    top:130px;
+}
+.sider-bottom span{
+    position:absolute;
+    display: block;
+    color: rgba(42, 42, 42, 0.81);
+    width: 110px;
+    line-height:25px;
+    z-index:1001;
+    top:80px;
+    left:10px;
+    border-radius:20px;
+    cursor: pointer;
+}
+.sider-bottom span:last-child{
+    margin-top:30px;
+}
+.sider-bottom span:hover .anticon-qq{
+    color: #ffffff !important;
+}
+.sider-bottom span:hover{
+    background:rgb(250,131, 18);
+    color: #ffffff;
+}
+
+
+/*内容，卡牌*/
+.smallTitleContent{
+    width:100%;
+    min-width:1110px;
+    white-space: nowrap;
+}
+.smallTitleContent .list{
+    width:20%;
+    display: inline-block;
+    min-width:200px;
+    height:300px;
+    border:solid 1px #cccccc;
+    border-radius:5px;
+    margin:10px;
+}
+.loadingMore{
+    height: 40px !important;
+}
+.loadingMore:hover{
+    background: rgb(252,215,75) !important;
+}
+.loadingMore:hover .plus{
+    color: #ffffff !important;
+    font-weight:bold !important;
+}

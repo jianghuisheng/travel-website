@@ -1,0 +1,33 @@
+.header-nav{
+    position: fixed;
+    width: 100vw;
+    padding-top:30px;
+    padding-bottom:20px;
+    background:#ffffff;
+    z-index:1000;
+}
+.header-nav .header-logo{
+    width:55px;
+    height: 57px;
+    margin-top:-10px;
+}
+.header-nav h2{
+    font-size: 24px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(90, 90, 90);
+}
+.ant-menu{
+    background:transparent !important;
+    border:none !important;
+}
+.ant-menu-horizontal > .ant-menu-item > a{
+    color: rgb(90, 90, 90) !important;
+    font-size:16px;
+}
+.btnlogin,.btnzhuce,.btnsign,.addShop{
+    margin-top:10px;
+}
+
